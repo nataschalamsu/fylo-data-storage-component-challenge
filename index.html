@@ -5,27 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <!-- You’ve used 815 GB of your storage
 
   185 GB Left
   
   0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  1000 GB -->
+  <div class="container">
+    <div class="wrapper">
+      <div class="actions__container">
+        <img src="/images/logo.svg" alt="logo" id="logo">
+        <div class="actions">
+          <div class="action"><img src="/images/icon-document.svg" class="action__image" alt="documents"></div>
+          <div class="action"><img src="/images/icon-folder.svg" class="action__image" alt="folder"></div>
+          <div class="action"><img src="/images/icon-upload.svg" class="action__image" alt="upload"></div>
+        </div>
+      </div>
+      <div class="talk__box">
+        <span id="capacity__number">185</span>
+        <span id="capacity__unit">gb left</span>
+      </div>
+      <div class="storage-bar__container">
+        <span class="storage__info">You've used <strong>815 GB</strong> of your storage</span>
+        <div class="storage-capacity"></div>
+        <div class="progress-bar__wrapper">
+          <div class="progress-bar__background">
+            <div class="bar">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="progress-bar__label">
+            <span class="label">0 GB</span>
+            <span class="label">1000 GB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="/images/bg-desktop.svg" alt="background" id="background">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Acha</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
 </body>
 </html>
